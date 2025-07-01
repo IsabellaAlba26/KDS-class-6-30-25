@@ -33,8 +33,8 @@ income_ma_yearly <- map_dfr(
 
 # Plot the time series
 ggplot(income_ma_yearly, aes(x = year, y = estimate)) +
-  geom_line(color = "hotpink", size = 1.2) +
-  geom_point(color = "hotpink", size = 2) +
+  geom_line(color = "pink", size = 1.2) +
+  geom_point(color = "pink", size = 2) +
   labs(
     x = "Year",
     y = "Income (USD)",

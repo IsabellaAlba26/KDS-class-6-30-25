@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Massachusetts Median Income",
+    "section": "",
+    "text": "Median income in Mass over the past 5 years (minus 2020; census collected no data that year). All data used is from the US Census."
+  }
+]

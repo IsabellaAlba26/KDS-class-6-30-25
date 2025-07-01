@@ -1,21 +1,19 @@
 ---
-title: "Massachusetts Income"
+title: "Massachusetts Median Income"
+execute: 
+  echo: false
+  message: false
+  warning: false
 ---
 
 Median income in Mass over the past 5 years (minus 2020; census collected no data that year). All data used is from the US Census.
 
 ```{r}
-#| echo: FALSE
-#| message: FALSE
 library(tidyverse)
 library(tidycensus)
 ```
 
 ```{r}
-#| echo: FALSE
-#| message: FALSE
-#| warning: FALSE
-
 years <- c(2017, 2018, 2019, 2021, 2022)
 
 # Fetch median household income for Massachusetts for each year
@@ -38,7 +36,6 @@ ggplot(income_ma_yearly, aes(x = year, y = estimate)) +
   geom_line(color = "steelblue", size = 1.2) +
   geom_point(color = "steelblue", size = 2) +
   labs(
-    title = "Median Household Income in Massachusetts (2010–2022)",
     x = "Year",
     y = "Income (USD)",
     caption = "Source: ACS 1-Year Estimates via tidycensus"
